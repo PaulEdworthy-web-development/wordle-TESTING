@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root {
+  --color-white: #fff;
+  --color-bg-grey-dark: #333;
+  --color-bg-grey: #555;
+  --color-success: #538d4e;
+  --color-warning: #b59f3b;
+}
+
+/* CSS debugging */
+/* * {
+  outline: 1px solid red;
+} */
+
+* {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body {
+  align-items: center;
+  background-color: var(--color-bg-grey-dark);
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrong {
+  background-color: #777;
+  border: none;
+}
+
+.misplaced {
+  background-color: var(--color-warning);
+  border: none;
+}
+
+.correct {
+  background-color: var(--color-success);
+  border: none;
+}
+
+.container {
+  background-color: var(--color-bg-grey);
+  border: 1px solid var(--color-white);
+  border-radius: 5px;
+  width: 400px;
+}
+
+.game__container,
+.game__keyboard {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.game__keyboard {
+  border-top: 1px solid var(--color-white);
+  padding-top: 1rem;
+}
+
+.game__row,
+.keyboard__row {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.game__tile,
+.key {
+  border: 1px solid var(--color-white);
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 0.25rem;
+  text-align: center;
+  width: 50px;
+  vertical-align: middle;
+}
+
+.key {
+  font-size: 1rem;
+  height: 40px;
+  line-height: 40px;
+  width: 30px;
+}
